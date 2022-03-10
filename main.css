@@ -2,6 +2,7 @@ body {
     color: #222222;
     background-color: whitesmoke;
     font-family: 'Genos', sans-serif;
+    margin: 0;
 }
 
 nav {
@@ -15,25 +16,33 @@ nav {
     height: 100px;
 }
 
-.footer {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	background-color: rgb(186, 125, 236);
-	color: white;
+.wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
+  .push {
+    height: 50px;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: white;
+	color: #222222;
 	text-align: center;
-    margin-top: 25px;
-}
+  }
 
 .footer-left {
     float: left;
-    padding-left: 40px;
+    padding-left: 45px;
 }
 
 .footer-right {
     float: right;
-    padding-right: 40px;
+    padding-right: 45px;
 }
 
 
