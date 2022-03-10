@@ -1,9 +1,49 @@
 body {
     color: #222222;
     background-color: whitesmoke;
+    font-family: 'Genos', sans-serif;
 }
 
-#banner {
+nav {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.clear{
+    height: 100px;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(186, 125, 236);
+	color: white;
+	text-align: center;
+    margin-top: 25px;
+}
+
+.footer-left {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer-right {
+    float: right;
+    padding-right: 40px;
+}
+
+
+a {color: #222222;}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+header {
     margin-bottom: 50px;
 }
 
@@ -25,7 +65,24 @@ body {
     margin-bottom: -5px;
 }
 
+
+.caption {
+    position: relative;
+    margin-top: -57px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(13.33, 13.33, 13.33, 0.5);
+    text-align: center;
+}
+
+.cap {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
 .row {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
