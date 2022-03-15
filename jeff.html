@@ -11,46 +11,78 @@
     <body>
         <div class="wrapper">
             <header>
-                <a href="index.html">
-                    <img src="Photos/Name-Logo.png" alt="" id="logo">
-                </a>
+                <div>
+                    <center>
+                        <a href="index.html">
+                            <img src="Photos/Name-Logo.png" alt="" id="logo">
+                        </a>
+                    </center>
+                </div>
                 <div id="myInfo">
                     <h2>Raine McDevitt</h3>
                     <p>designer & developer</p>
                 </div>
             </header>
+            <div id="jeffTitle">
+                <h1>Jeff Rosenstock</h1>
+                <p>a study of typographic grid systems</p>
+            </div>
             <div class="container">
                 <div class="tile">
-                    <img src="Photos/JEFF/albums.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/albums.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/circle.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/circle.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/910.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/910.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/fire.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/fire.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/sorry.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/sorry.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/amen.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/amen.jpg" alt="">
                 </div>
                 <div class="tile">
-                    <img src="Photos/JEFF/horizontal.jpg" alt="">
+                    <img id="modalImg" src="Photos/JEFF/horizontal.jpg" alt="">
                 </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+
+                <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("modalImg");
+                var modalImg = document.getElementById("img01");
+                img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                    modal.style.display = "none";
+                }
+                </script>  
                 <!-- <div class="tile">
                     <img src="Photos/JEFF/nausea.jpg" alt="">
                 </div> -->
                 <!-- <div class="tile">
                     <img src="Photos/JEFF/festival.jpg" alt="">
                 </div> -->
-
-                
             </div>
-                
             <nav>
                 <a href="https://issuu.com/imznewblack/docs/magazine-final-spreads" target="_blank">JAM!</a> |
                 <a href="" target="_blank">STANCE</a> |
