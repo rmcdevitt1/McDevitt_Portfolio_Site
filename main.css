@@ -9,7 +9,7 @@ nav {
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .clear{
@@ -53,20 +53,20 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 header {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 #logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 12%;
-    width: 12%;
+    height: 11%;
+    width: 11%;
     padding-top: 40px;
     padding-bottom: 10px;
 }
 
-#myInfo {
+#myInfo h2 {
     color: #222222;
     text-align: center;
     font-family: 'Genos', sans-serif;
@@ -74,6 +74,13 @@ header {
     margin-bottom: -5px;
 }
 
+#myInfo p {
+    color: #222222;
+    text-align: center;
+    font-family: 'Genos', sans-serif;
+    margin-top: 3px;
+    margin-bottom: -5px;
+}
 
 .caption {
     position: relative;
