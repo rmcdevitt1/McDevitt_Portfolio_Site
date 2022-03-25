@@ -180,6 +180,17 @@ cursor: pointer;
   padding-right: 90px;
 }
 
+/* row */
+.stancePampContainer {
+  display: flex;
+}
+
+/* column */
+.stancePamp {
+  flex: 50%;
+  padding: 5px;
+}
+
 
 
 .caption {
