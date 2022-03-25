@@ -161,6 +161,12 @@ text-decoration: none;
 cursor: pointer;
 }
 
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
   @keyframes zoom {
     from {
       transform: scale(0)
@@ -177,6 +183,15 @@ cursor: pointer;
 .stanceLogos {
   margin-left: 90px;
   margin-right: 90px;
+}
+
+.stanceCaptions p {
+  margin: 4px 90px 0px 90px;
+  text-align: right;
+}
+
+#postersCaption {
+  margin-top: -61px;
 }
 
 .stanceContainer {
@@ -196,6 +211,7 @@ cursor: pointer;
 
 .stancePosterContainer {
   margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 
@@ -275,6 +291,36 @@ cursor: pointer;
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+
+
 
 
   
