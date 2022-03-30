@@ -260,6 +260,10 @@ cursor: pointer;
     object-fit: cover;
   }
 
+.column:hover {
+  opacity: 50%;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -309,10 +313,6 @@ cursor: pointer;
       margin-bottom: 1rem;
   }
 }
-
-
-
-
 
 
 .tile:nth-child(1),
