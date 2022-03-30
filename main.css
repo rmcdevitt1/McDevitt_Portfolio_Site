@@ -44,6 +44,10 @@ nav {
 height: 50px;
 }
 
+.nav {
+  margin-top: 50px;
+}
+
 .footer {
 height: 50px;
 background-color: #222222;
@@ -260,7 +264,7 @@ cursor: pointer;
     grid-gap: 1.5rem;
     margin-left: 90px;
     margin-right: 90px;
-    margin-bottom: 65px;
+    /* margin-bottom: 65px; */
 }
 
 .tile img{
