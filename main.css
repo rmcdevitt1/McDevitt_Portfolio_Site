@@ -242,6 +242,8 @@ cursor: pointer;
     justify-content: center;
   }
   
+
+
   /* Create four equal columns that sits next to each other */
 .column {
     flex: 30%;
@@ -272,6 +274,46 @@ cursor: pointer;
     height: 100%;
     object-fit: cover;
 }
+
+.containerLftg{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-left: 90px;
+  margin-right: 90px;
+  /* margin-bottom: 65px; */
+}
+
+.lftgtile img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+}
+
+
+.lftgtile:nth-child(1),
+.lftgtile:nth-child(2) {
+  grid-column: span 2;
+  /* grid-row: span 1; */
+}
+
+
+@media screen and (max-width: 650px){
+  .containerLftg{
+      display: block;
+  }
+  .lftgtile{
+      margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
 
 .tile:nth-child(1),
 .tile:nth-child(7){
